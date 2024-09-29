@@ -7,14 +7,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Production
+build
 dist
 dist-ssr
+
+# Vite
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 *.suo
@@ -22,3 +34,35 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Tailwind CSS
+src/styles/tailwind.output.css
+
+# Shadcn
+.shadcn-cache
+
+# R3F / Three.js specific
+*.gltf
+*.glb
+*.obj
+*.mtl
+*.fbx
+
+# Misc
+*.pem
+.cache
+.vercel
+.netlify
+.next
+out
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
