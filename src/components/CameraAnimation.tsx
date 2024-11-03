@@ -8,8 +8,8 @@ export function CameraAnimation() {
   useFrame(({ clock }) => {
     if (cameraRef.current) {
       const t = clock.getElapsedTime();
-      cameraRef.current.position.x = Math.sin(t * 0.1) * 10;
-      cameraRef.current.position.z = Math.cos(t * 0.1) * 10;
+      cameraRef.current.position.x = Math.sin(t * 0.01) * 10;
+      cameraRef.current.position.z = Math.cos(t * 0.01) * 10;
       cameraRef.current.lookAt(0, 0, 0);
     }
   });
